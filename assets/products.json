@@ -1,0 +1,37 @@
+[{
+        "id": 101,
+        "name": "SBUBBY",
+        "description": "EEF FREEF",
+        "price": 1.99
+    },
+    {
+        "id": 102,
+        "name": "DONKIN' DUNNTS",
+        "description": "AMURICA RUNN NO DUNDUN",
+        "price": 2.99
+    },
+    {
+        "id": 103,
+        "name": "WEEDYS",
+        "description": "OLD FASHINED HURGUSBURGUS",
+        "price": 3.99
+    },
+    {
+        "id": 104,
+        "name": "BUBGER KIRG",
+        "description": "HAVE IT IN A WAY",
+        "price": 4.99
+    },
+    {
+        "id": 105,
+        "name": "MCNALDO'S",
+        "description": "I LIKE THE IT",
+        "price": 2.99
+    },
+    {
+        "id": 106,
+        "name": "CHIPOTLE",
+        "description": "ECOLI CENTRAL",
+        "price": 4.99
+    }
+]

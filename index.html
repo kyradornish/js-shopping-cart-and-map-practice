@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <span class="ahover-eee"><a class="navbar-brand" href="#">KD</a></span>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="#cards">Products</a>
+            </li>
+            <li>
+                <a href="#map">Location</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="row products">
+                <div class="col-md-9">
+                    <h1>Products</h1><hr>
+                    <div id="cards">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Shopping Cart</div>
+                        <div class="panel-body">
+                            <b>Products</b><hr>
+                            <div id="prodcart">
+                            </div>
+                        </div>
+                        <div class="panel-body"><hr><b>Total</b>
+                            <span class="floatright" id="total">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Location</h2>
+                    <div id="map">asdfasd</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h6>Made by <a href="https://kyradornish.com" target="_blank">Kyra Dornish</a></h6>
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVbwexdDN1G6xD9RhKXNqw_V5AcPEKEcw&callback=initMap">
+    </script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
