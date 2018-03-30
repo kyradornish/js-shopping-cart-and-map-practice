@@ -57,6 +57,7 @@ function remove(i){
     sumtotal();
 }
 
+
 //Database Functions
 function getCart() {
     var cartItems = firebase.database().ref('cart/items');
