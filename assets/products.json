@@ -1,37 +1,37 @@
 [{
         "id": 101,
-        "name": "SBUBBY",
-        "description": "EEF FREEF",
-        "price": 1.99
+        "name": "CHAMPAGNE",
+        "description": "DELICIOUS BUBBLEY",
+        "price": 11.99
     },
     {
         "id": 102,
-        "name": "DONKIN' DUNNTS",
-        "description": "AMURICA RUNN NO DUNDUN",
-        "price": 2.99
+        "name": "SHIRAZ",
+        "description": "YUMMY RED WINE",
+        "price": 9.99
     },
     {
         "id": 103,
-        "name": "WEEDYS",
-        "description": "OLD FASHINED HURGUSBURGUS",
-        "price": 3.99
+        "name": "CHARDONNAY",
+        "description": "THE BEST WHITE WINE",
+        "price": 8.99
     },
     {
         "id": 104,
-        "name": "BUBGER KIRG",
-        "description": "HAVE IT IN A WAY",
-        "price": 4.99
+        "name": "CABERNET SAUVIGNON",
+        "description": "FANCY RED WINE",
+        "price": 14.99
     },
     {
         "id": 105,
-        "name": "MCNALDO'S",
-        "description": "I LIKE THE IT",
-        "price": 2.99
+        "name": "MALBEC",
+        "description": "BOLD RED WINE",
+        "price": 10.99
     },
     {
         "id": 106,
-        "name": "CHIPOTLE",
-        "description": "ECOLI CENTRAL",
-        "price": 4.99
+        "name": "ZINFANDEL",
+        "description": "RED WINE FOR COOL PEOPLE",
+        "price": 7.99
     }
 ]

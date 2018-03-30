@@ -66,7 +66,25 @@
         <h6>Made by <a href="https://kyradornish.com" target="_blank">Kyra Dornish</a></h6>
     </div>
     
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+     <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDXbKjqoum9bfClJXi-9PQZNzEJnkcdBDg",
+            authDomain: "map-cart-1522348923451.firebaseapp.com",
+            databaseURL: "https://map-cart-1522348923451.firebaseio.com",
+            projectId: "map-cart-1522348923451",
+            storageBucket: "map-cart-1522348923451.appspot.com",
+            messagingSenderId: "524617479616"
+        };
 
+        firebase.initializeApp(config);
+
+        var database = firebase.database();
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-database.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script async defer

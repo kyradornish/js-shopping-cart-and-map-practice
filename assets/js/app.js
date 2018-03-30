@@ -3,6 +3,8 @@ var cart = [];
 var inventory;
 var add;
 
+firebase.initializeApp(config);
+
 $.getJSON(urlCard, function(res) {
     var HTMLcard = '';
     inventory = res;
@@ -16,18 +18,23 @@ function addtocart(id) {
     $.each(inventory, function (index, prod) {
         if (prod.id === id) {
             cart.push(prod);
-        }
+            }
+        });
     add = true;
-    });
-    displaycart();
+    writeData(cart);
+    getCart();
     sumtotal();
-};
+}
 
-function displaycart() {
+function displaycart(items) {
     HTMLprodcart = '';
-    for (var i=0; i<cart.length; i++) {
-        HTMLprodcart += '<div class="cartprod" ><a href="#" onclick="remove('+i+')"><span class="glyphicon glyphicon-remove"></span></a>' + cart[i].name + ': <span class="floatright">' + cart[i].price + '</span></div>';
-    };
+    if (items === null) {
+        cart = []
+    }
+    else {for (var i=0; i<items.length; i++) {
+            HTMLprodcart += '<div class="cartprod" ><a href="#" onclick="remove('+i+')"><span class="glyphicon glyphicon-remove"></span></a>' + items[i].name + ': <span class="floatright">' + items[i].price + '</span></div>';
+        };
+    }
     $("#prodcart").html(HTMLprodcart);
 }
 
@@ -45,11 +52,27 @@ function sumtotal(){
 
 function remove(i){
     cart.splice(i, 1);
-    displaycart();
+    writeData(cart);
+    getCart();
     sumtotal();
 }
 
+//Database Functions
+function getCart() {
+    var cartItems = firebase.database().ref('cart/items');
+    cartItems.on('value', function (items) {
+        displaycart(items.val());
+    });
+};
 
+function writeData(cart) {
+    firebase.database().ref('cart/').set({
+        'items': cart
+    });
+}
+
+
+//maps
 function initMap() {
     var uluru = {
         lat: 38.877007,
@@ -66,6 +89,7 @@ function initMap() {
         .Marker({position: uluru, map: map});
 }
 
+//smooth scroll
 $(document)
     .ready(function () {
         $("a")
